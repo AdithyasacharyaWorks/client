@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 
 const CheckoutPage = () => {
   const [bookingInfo, setBookingInfo] = useState({
@@ -75,13 +76,14 @@ const CheckoutPage = () => {
       </section>
 
       {/* Submit Button */}
-      <button
+      {/* <button
         type="button"
         onClick={() => alert('Booking/Order confirmed!')}
         className="bg-black text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300 inline-block"
       >
         Confirm Booking/Order
-      </button>
+      </button> */}
+      <Button onClick={() => alert('Booking/Order confirmed!')} > Confirm Booking/Order</Button>
 
       {/* Link back to home */}
       <div className="mt-6 text-center">
